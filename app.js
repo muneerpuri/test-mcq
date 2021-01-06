@@ -9,23 +9,27 @@ function page1(){
 
     let data = product1.split('=');
     localStorage.setItem('username',data[0])
+    document.getElementById('hiditem').value = data[0]
     console.log(data[0])
 }
 
 function page2(){
 
     const product2 = urlParams.get('answer')
-
-
+    const product1 = urlParams.get('user')
+    let data = product1.split('=');
+    localStorage.setItem('username',data[0])
     let data2 = product2.split('=');
     localStorage.setItem('answer',data2[0])
     console.log(data2[0])
 }
 
 function page3(){
+    let dataName = localStorage.getItem('username')
     let user = document.getElementById('username')
     let answer = document.getElementById('answer')
-    user.innerText = 'hey '+localStorage.getItem('username')+'😎'
+    console.log(dataName + 'data')
+    user.innerText = 'hey '+dataName+'😎'
     answer.innerText = "you selected "
 
     if (localStorage.getItem('answer') === 'car1'){
