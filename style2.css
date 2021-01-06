@@ -1,0 +1,83 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+body{
+    background: #1c92d2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2fcfe, #1c92d2); 
+}
+h3{
+    letter-spacing: 3px;
+    border-radius: 30px;
+    font-family: 'Source code Pro';
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    border: 1px solid black;
+    color: black;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(100% - 20%);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+img{
+    width: 130px;
+    height: 100px;
+}
+.divis{
+    width: 160px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    box-shadow: 5px 5px 4px grey;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
+
+
+}
+.divis:hover{
+    background-color: rgb(0, 89, 255);
+}
+#sendData{
+    width: calc(100% - 70%);
+    height: 50px;
+    outline: none;
+    border: 1px groove black;
+    margin: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+#sendData:hover{
+    background-color: black;
+    color: white;
+
+}
+.formSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media all and (max-width:500px){
+    .formSec{
+        flex-direction: column;
+    }
+
+}

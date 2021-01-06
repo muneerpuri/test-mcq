@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: #F2994A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h2{
+    font-family: 'Hanalei Fill';
+}
+
+
+p{
+    font-family: 'Oswald';
+}
+
+
+.answers{
+    width: calc(100% - 30%);
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    background: white;
+    border: 10px double black;
+    padding: 20px;
+    border-radius: 15px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    
+
+
+}
+.answerimage{
+    text-align: center;
+}
+.answerimage img{
+    width: calc(100% - 50%);
+    margin: auto;
+
+
+}
+p{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 10px;
+}
+a{
+    text-decoration: none;
+}
+#pbtn{
+    display: block;
+    width: calc(100% - 70%);
+    margin: auto;
+    margin-top: 20px;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 5px;
+    text-decoration: none;
+    justify-content: center;
+    background: orange;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#pbtn:hover{
+    font-weight: bold;
+    background: black;
+    color: white;
+
+}
+@media all and (max-width:500px){
+    h2{
+        font-size: 20px;
+        
+    letter-spacing: 5px;
+    }
+
+    p{
+        font-size: 20px;
+        letter-spacing: 5px;
+        margin: 15px 0;
+    }
+}
