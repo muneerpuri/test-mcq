@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>page 2</title>
     <link rel="stylesheet" href="./style2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
@@ -12,20 +12,20 @@
     <div class="formsub">
         <form action="./page3.html" method="GET">
         <h3>1: please choose a cycle</h3>
-       <div class="formSec"> <div class="divis"><input type="radio" id="imgr" name="answer" value="car1">
+       <div class="formSec"> <div class="divis"><input type="radio" id="imgr" required name="answer" value="car1">
         <label for="car1"><img src="./car1.png" alt="">
         </label></div>
-        <div class="divis"><input type="radio" id="imgr" name="answer" value="car2">
+        <div class="divis"><input type="radio" id="imgr" name="answer" required value="car2">
         <label for="car2"><img src="./car2.png" alt="">
         </label></div>
-        <div class="divis"><input type="radio" id="imgr" name="answer" value="car3">
+        <div class="divis"><input type="radio" id="imgr" name="answer" required value="car3">
         <label for="car3"><img src="./car3.png" alt="">
         </label></div>
         <input type="hidden" name="user" value="" id="hiditem">
-        <div class="divis"><input type="radio" id="imgr" name="answer" value="cycle">
+        <div class="divis"><input type="radio" id="imgr" name="answer" required value="cycle">
         <label for="cycle"><img src="./cycle.png" alt="">
         </label></div></div>
-        <input type="submit" id="sendData"   value="send">
+        <input type="submit" id="sendData" onclick="return checkData()"  value="send">
     </form>
     </div>
 <script src="./app.js"></script>

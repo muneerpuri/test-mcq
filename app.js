@@ -24,12 +24,16 @@ function page2(){
     console.log(data2[0])
 }
 
+
 function page3(){
     let dataName = localStorage.getItem('username')
+    if (dataName === null || dataName === ''){
+        dataName = 'bot'
+    }
     let user = document.getElementById('username')
     let answer = document.getElementById('answer')
     console.log(dataName + 'data')
-    user.innerText = 'hey '+dataName+'😎'
+    user.innerText = 'hey '+dataName+(dataName==='bot'?'🤖':'😎')
     answer.innerText = "you selected "
 
     if (localStorage.getItem('answer') === 'car1'){
@@ -41,8 +45,11 @@ function page3(){
     else if (localStorage.getItem('answer') === 'car3'){
         document.getElementById("pg3").src = "./car3.png";
     }
-    else{
+    else if(localStorage.getItem('answer') === 'cycle'){
         document.getElementById("pg3").src = "./cycle.png";
+    }else{
+        document.getElementById("pg3").src = "./error.jpg";
+
     }
 
 
